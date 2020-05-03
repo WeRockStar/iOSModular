@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22460774B6FF69C190F42BBC /* Pods_iOSModular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BF8BB96627011A0486E34C /* Pods_iOSModular.framework */; };
 		DF8C0EA1245E8E04003FA10F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C0EA0245E8E04003FA10F /* AppDelegate.swift */; };
 		DF8C0EA3245E8E04003FA10F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C0EA2245E8E04003FA10F /* SceneDelegate.swift */; };
 		DF8C0EA5245E8E04003FA10F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C0EA4245E8E04003FA10F /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		265588C5DC4606CFA818338D /* Pods-iOSModular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSModular.release.xcconfig"; path = "Target Support Files/Pods-iOSModular/Pods-iOSModular.release.xcconfig"; sourceTree = "<group>"; };
+		D1BF8BB96627011A0486E34C /* Pods_iOSModular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSModular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8C0E9D245E8E04003FA10F /* iOSModular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSModular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8C0EA0245E8E04003FA10F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF8C0EA2245E8E04003FA10F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		DF8C0EA9245E8E04003FA10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF8C0EAC245E8E04003FA10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF8C0EAE245E8E04003FA10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1EF626E82D1CD95F8514387 /* Pods-iOSModular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSModular.debug.xcconfig"; path = "Target Support Files/Pods-iOSModular/Pods-iOSModular.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22460774B6FF69C190F42BBC /* Pods_iOSModular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		633F08AA8944BC03DA971878 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1EF626E82D1CD95F8514387 /* Pods-iOSModular.debug.xcconfig */,
+				265588C5DC4606CFA818338D /* Pods-iOSModular.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA460A6F7C991242CA6CD8B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1BF8BB96627011A0486E34C /* Pods_iOSModular.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF8C0E94245E8E04003FA10F = {
 			isa = PBXGroup;
 			children = (
 				DF8C0E9F245E8E04003FA10F /* iOSModular */,
 				DF8C0E9E245E8E04003FA10F /* Products */,
+				633F08AA8944BC03DA971878 /* Pods */,
+				AA460A6F7C991242CA6CD8B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF8C0EB1245E8E04003FA10F /* Build configuration list for PBXNativeTarget "iOSModular" */;
 			buildPhases = (
+				6CC430C9DC6330E48CBA4E82 /* [CP] Check Pods Manifest.lock */,
 				DF8C0E99245E8E04003FA10F /* Sources */,
 				DF8C0E9A245E8E04003FA10F /* Frameworks */,
 				DF8C0E9B245E8E04003FA10F /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CC430C9DC6330E48CBA4E82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSModular-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF8C0E99245E8E04003FA10F /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		DF8C0EB2245E8E04003FA10F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EF626E82D1CD95F8514387 /* Pods-iOSModular.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +352,7 @@
 		};
 		DF8C0EB3245E8E04003FA10F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 265588C5DC4606CFA818338D /* Pods-iOSModular.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
